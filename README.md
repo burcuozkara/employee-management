@@ -21,6 +21,7 @@ The API provides the following endpoints:
 * **`GET /api/employees/{id}`**: Retrieves a specific employee by ID.
 * **`PUT /api/employees/{id}`**: Updates the information of an employee by ID.
 * **`DELETE /api/employees/{id}`**: Deletes an employee by ID.
+* **`GET /api/employees/byEmail`**: Retrieves a specific employee by email address.
 
 ## How to Run Locally
 
@@ -44,7 +45,7 @@ You can use a tool like Postman to test the API endpoints.
 **Body (JSON):**
 ```json
 {
-    "firstName": "Ahmet",
-    "lastName": "Yilmaz",
-    "email": "ahmet.yilmaz@example.com"
+    "firstName": "Burcu",
+    "lastName": "Ozkara",
+    "email": "burcu.ozkara@example.com"
 }

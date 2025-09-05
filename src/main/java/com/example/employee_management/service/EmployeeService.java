@@ -40,8 +40,11 @@ public class EmployeeService {
             existingEmployee.setEmail(employeeDetails.getEmail());
             return employeeRepository.save(existingEmployee);
         } else {
-            // Çalışan bulunamazsa
             return null;
         }
+    }
+
+    public Optional<Employee> getEmployeeByEmail(String email) {
+        return employeeRepository.findByEmail(email);
     }
 }

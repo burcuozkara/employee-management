@@ -39,4 +39,9 @@ public class EmployeeController {
     public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employeeDetails) {
         return employeeService.updateEmployee(id, employeeDetails);
     }
+
+    @GetMapping("/byEmail")
+    public Optional<Employee> getEmployeeByEmail(@RequestParam String email) {
+        return employeeService.getEmployeeByEmail(email);
+    }
 }
